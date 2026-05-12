@@ -29,7 +29,7 @@ function ViewCreator() {
     }
 
     return (
-        <div>
+        <article className="creator-detail">
             {creator.imageURL && (
                 <img
                     src={creator.imageURL}
@@ -38,19 +38,21 @@ function ViewCreator() {
                 />
             )}
 
+            <p className="eyebrow">Creator profile</p>
             <h1>{creator.name}</h1>
 
             <p>{creator.description}</p>
 
-            <a href={creator.url} target="_blank" rel="noreferrer">
-                Visit Creator Page
-            </a>
+            <div className="detail-actions">
+                <a href={creator.url} target="_blank" rel="noreferrer" role="button">
+                    Visit Creator Page
+                </a>
 
-            <br />
-            <br />
-
-            <Link to={`/edit/${creator.id}`}>Edit Creator</Link>
-        </div>
+                <Link to={`/edit/${creator.id}`} role="button" className="secondary">
+                    Edit Creator
+                </Link>
+            </div>
+        </article>
     );
 }
 

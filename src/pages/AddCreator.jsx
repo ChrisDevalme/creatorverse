@@ -41,43 +41,51 @@ function AddCreator() {
     }
 
     return (
-        <div>
+        <div className="form-page">
             <h1>Add Creator</h1>
 
             <form onSubmit={handleSubmit}>
-                <label>Name</label>
-                <input
-                    type="text"
-                    name="name"
-                    value={creator.name}
-                    onChange={handleChange}
-                    required
-                />
+                <label>
+                    Name
+                    <input
+                        type="text"
+                        name="name"
+                        value={creator.name}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
 
-                <label>URL</label>
-                <input
-                    type="url"
-                    name="url"
-                    value={creator.url}
-                    onChange={handleChange}
-                    required
-                />
+                <label>
+                    URL
+                    <input
+                        type="url"
+                        name="url"
+                        value={creator.url}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
 
-                <label>Description</label>
-                <textarea
-                    name="description"
-                    value={creator.description}
-                    onChange={handleChange}
-                    required
-                />
+                <label>
+                    Description
+                    <textarea
+                        name="description"
+                        value={creator.description}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
 
-                <label>Image URL Optional</label>
-                <input
-                    type="url"
-                    name="imageURL"
-                    value={creator.imageURL}
-                    onChange={handleChange}
-                />
+                <label>
+                    Image URL Optional
+                    <input
+                        type="url"
+                        name="imageURL"
+                        value={creator.imageURL}
+                        onChange={handleChange}
+                    />
+                </label>
 
                 <button type="submit">Add Creator</button>
             </form>
