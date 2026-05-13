@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![CreatorVerse.gif](CreatorVerse.gif)
+![CreatorVerse 5.gif](CreatorVerse%205.gif)
 
 ## Notes
 
